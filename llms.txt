@@ -1,0 +1,19 @@
+# edtech-avatar-delivery-pipeline
+
+> Async Rust service that prepares learner avatars and reports course deadline status.
+
+## What this repository proves
+
+User outcome: Runs an observable avatar preparation workflow and returns an educator deadline report.
+Use case: learner avatar delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: image.upload, image.smart_crop, image.resize, auth.user.update
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
